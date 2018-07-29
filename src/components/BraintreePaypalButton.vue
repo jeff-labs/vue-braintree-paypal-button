@@ -11,11 +11,11 @@ import paypal from 'paypal-checkout';
 
 export default {
   name: 'BraintreePaypalButton',
-  env: {
-    required: true,
-    type: String,
-  },
   props: {
+    env: {
+      required: true,
+      type: String,
+    },
     token: {
       default: null,
       type: String,
@@ -38,8 +38,9 @@ export default {
             vm.$emit('error', paypalCheckoutErr);
             return;
           }
+          let environment = vm.env;
           paypal.Button.render({
-            env: 'sandbox',
+            env: environment,
             payment() {
               return paypalCheckoutInstance.createPayment({ flow: 'vault' });
             },
@@ -52,8 +53,8 @@ export default {
                 vm.$emit('authorized', payload.nonce);
               });
             },
-            onCancel(data) {
-
+            onCancel() {
+              vm.$emit('canceled');
             },
             onError(error) {
               vm.$emit('error', error);

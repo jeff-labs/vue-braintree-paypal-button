@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <input v-model="token" placeholder="Insert your Braintree client token here"/>
-    <BraintreePaypalButton :token="token" :env="env" v-on:error="onError" v-on:authorized="onAuthorize" />
+    <BraintreePaypalButton :token="token" :env="environment" v-on:error="onError" v-on:authorized="onAuthorize" v-on:canceled="onCancel" />
   </div>
 </template>
 
@@ -16,13 +16,16 @@ export default {
   },
   data() {
     return {
-      env: 'sandbox',
+      environment: 'sandbox',
       token: null,
     };
   },
   methods: {
     onAuthorize: (nonce) => {
       console.log(nonce);
+    },
+    onCancel: () => {
+      console.log("Canceled");
     },
     onError: (error) => {
       console.error(error);
