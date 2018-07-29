@@ -1,17 +1,32 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <input v-model="token" placeholder="Insert your Braintree client token here"/>
+    <BraintreePaypalButton :token="token" :env="env" v-on:error="onError" v-on:authorized="onAuthorize" />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue';
+
+import BraintreePaypalButton from '@/components/BraintreePaypalButton.vue';
 
 export default {
   name: 'app',
   components: {
-    HelloWorld,
+    BraintreePaypalButton,
+  },
+  data() {
+    return {
+      env: 'sandbox',
+      token: null,
+    };
+  },
+  methods: {
+    onAuthorize: (nonce) => {
+      console.log(nonce);
+    },
+    onError: (error) => {
+      console.error(error);
+    },
   },
 };
 </script>

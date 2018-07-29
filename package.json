@@ -1,14 +1,15 @@
 {
   "name": "vue-braintree-paypal-button",
   "version": "0.1.0",
-  "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "test:unit": "vue-cli-service test:unit"
+    "test": "vue-cli-service test:unit"
   },
   "dependencies": {
+    "braintree-web": "^3.35.0",
+    "paypal-checkout": "^4.0.209",
     "vue": "^2.5.16"
   },
   "devDependencies": {
