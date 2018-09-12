@@ -20,10 +20,14 @@ export default {
       default: null,
       type: String,
     },
+    locale: {
+      default: 'en_US',
+      type: String,
+    },
   },
   watch: {
     token(token) {
-      let vm = this;
+      const vm = this;
       braintree.client.create({
         authorization: token,
       }, (clientError, clientInstance) => {
@@ -38,9 +42,13 @@ export default {
             vm.$emit('error', paypalCheckoutErr);
             return;
           }
-          let environment = vm.env;
+
+          const environment = vm.env;
+          const locale = vm.locale;
           paypal.Button.render({
             env: environment,
+            locale,
+            style: {},
             payment() {
               return paypalCheckoutInstance.createPayment({ flow: 'vault' });
             },
