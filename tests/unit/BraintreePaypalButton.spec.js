@@ -1,11 +1,16 @@
+
 import { shallowMount } from '@vue/test-utils';
 import BraintreePaypalButton from '@/components/BraintreePaypalButton.vue';
 
+jest.mock('braintree-web');
+jest.mock('paypal-checkout');
+
 describe('BraintreePaypalButton.vue', () => {
-  it('renders props.msg when passed', () => {
-    const wrapper = shallowMount(BraintreePaypalButton, {
-      propsData: { },
+  it('renders when mounted', () => {
+    shallowMount(BraintreePaypalButton, {
+      propsData: {
+        env: 'sandbox',
+      },
     });
-    // expect(wrapper.text()).toMatch(msg);
   });
 });
