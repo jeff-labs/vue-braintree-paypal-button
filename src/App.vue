@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <input v-model="token" placeholder="Insert your Braintree client token here"/>
-    <BraintreePaypalButton :token="token" :env="environment" :locale="locale" v-on:error="onError" v-on:authorized="onAuthorize" v-on:canceled="onCancel" />
+    <BraintreePaypalButton v-bind:styles="{ shape: 'rect' }" :token="token" :env="environment" :locale="locale" v-on:error="onError" v-on:authorized="onAuthorize" v-on:canceled="onCancel" />
   </div>
 </template>
 

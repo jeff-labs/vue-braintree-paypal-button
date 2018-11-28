@@ -1,7 +1,5 @@
 <template>
-    <div class="braintree-paypal-button-container">
-        <div id="braintree-paypal-button"/>
-    </div>
+    <div class="braintree-paypal-button"></div>
 </template>
 
 <script>
@@ -16,13 +14,22 @@ export default {
       required: true,
       type: String,
     },
+    // https://developers.braintreepayments.com/guides/paypal/vault/javascript/v3
     token: {
       default: null,
       type: String,
     },
+    // https://developer.paypal.com/docs/checkout/how-to/customize-button/#supported-locales
     locale: {
       default: 'en_US',
       type: String,
+    },
+    // https://developer.paypal.com/docs/checkout/how-to/customize-button/
+    styles: {
+      type: Object,
+      default() {
+        return {};
+      },
     },
   },
   watch: {
@@ -45,10 +52,11 @@ export default {
 
           const environment = vm.env;
           const locale = vm.locale;
+          const styles = vm.styles;
           paypal.Button.render({
             env: environment,
             locale,
-            style: {},
+            style: styles,
             payment() {
               return paypalCheckoutInstance.createPayment({ flow: 'vault' });
             },
@@ -67,7 +75,7 @@ export default {
             onError(error) {
               vm.$emit('error', error);
             },
-          }, '#braintree-paypal-button');
+          }, vm.$el);
         });
       });
     },

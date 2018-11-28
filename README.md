@@ -1,5 +1,11 @@
 # vue-braintree-paypal-button
 
+## Project doc
+
+[Braintree doc](https://developers.braintreepayments.com/guides/paypal/vault/javascript/v3)
+
+[Paypal doc](https://developer.paypal.com/docs/checkout/how-to/customize-button/)
+
 ## Project setup
 ```
 yarn install
