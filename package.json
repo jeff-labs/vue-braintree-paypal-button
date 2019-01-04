@@ -6,7 +6,8 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build --target lib src/components/BraintreePaypalButton.vue",
     "lint": "vue-cli-service lint",
-    "test": "vue-cli-service test:unit"
+    "test:unit": "vue-cli-service test:unit",
+    "test:e2e": "vue-cli-service test:e2e"
   },
   "dependencies": {
     "braintree-web": "^3.35.0",
@@ -17,6 +18,7 @@
     "@vue/cli-plugin-babel": "^3.0.0-rc.9",
     "@vue/cli-plugin-eslint": "^3.0.0-rc.9",
     "@vue/cli-plugin-unit-jest": "^3.0.0-rc.9",
+    "@vue/cli-plugin-e2e-cypress": "^3.2.0",
     "@vue/cli-service": "^3.0.0-rc.9",
     "@vue/eslint-config-airbnb": "^3.0.0-rc.9",
     "@vue/test-utils": "^1.0.0-beta.20",
