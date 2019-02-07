@@ -1,6 +1,22 @@
 {
-  "name": "vue-braintree-paypal-button",
-  "version": "0.2.1",
+  "name": "@mrjeffapp/vue-braintree-paypal-button",
+  "license": "MIT",
+  "version": "1.0.0",
+  "description": "Vue component to integrate PayPal payments Braintree using Vault flow",
+  "keywords": [
+    "braintree",
+    "vue",
+    "paypal"
+  ],
+  "homepage": "https://github.com/MrJeffApp/vue-braintree-paypal-button#readme",
+  "bugs": {
+    "url": "https://github.com/MrJeffApp/vue-braintree-paypal-button/issues"
+  },
+  "author": {
+    "name": "Hector Espert",
+    "email": "hector@mrjeffapp.com"
+  },
+  "repository": "github:MrJeffApp/vue-braintree-paypal-button",
   "main": "dist/vue-braintree-paypal-button.common.js",
   "scripts": {
     "serve": "vue-cli-service serve",
@@ -16,11 +32,11 @@
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.0.0-rc.9",
-    "@vue/cli-plugin-eslint": "^3.0.0-rc.9",
-    "@vue/cli-plugin-unit-jest": "^3.0.0-rc.9",
     "@vue/cli-plugin-e2e-cypress": "^3.2.0",
+    "@vue/cli-plugin-eslint": "^3.0.0-rc.9",
+    "@vue/cli-plugin-unit-jest": "^3.0.0",
     "@vue/cli-service": "^3.0.0-rc.9",
-    "@vue/eslint-config-airbnb": "^3.0.0-rc.9",
+    "@vue/eslint-config-airbnb": "^3.0.0",
     "@vue/test-utils": "^1.0.0-beta.20",
     "babel-core": "7.0.0-bridge.0",
     "babel-jest": "^23.0.1",
