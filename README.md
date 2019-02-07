@@ -1,5 +1,5 @@
 # Vue Braintree PayPal button
-Vue component to integrate PayPal payments Braintree using Vault flow.
+Vue component to integrate PayPal payments through Braintree using Vault flow.
 
 ## Documentation
 

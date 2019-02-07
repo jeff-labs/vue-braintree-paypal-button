@@ -936,7 +936,7 @@
   resolved "https://registry.yarnpkg.com/@vue/cli-overlay/-/cli-overlay-3.4.0.tgz#7fe7cf41eacbaf1f1579efcad93e23b65d4581db"
   integrity sha512-uLfQZvMChAf3UQNR+WN8a7vAPqvaw2tJs1TrNxPg+Dr7bm7HWoitvFremF0vLWkxIRM5e+VJgYV3wHk9EwWhzg==
 
-"@vue/cli-plugin-babel@^3.0.0-rc.9":
+"@vue/cli-plugin-babel@^3.0.0":
   version "3.4.0"
   resolved "https://registry.yarnpkg.com/@vue/cli-plugin-babel/-/cli-plugin-babel-3.4.0.tgz#d6e7967995f860b94204bdfb17900fadd4aea2d9"
   integrity sha512-8ViOzJa8UqUnmMl1422t8EIlCUc5PegSMsdU6xoqfavL83uEGjR+fE4gAI+g7xKo7Qk9+8Z8VvaredXMbmxCzA==
@@ -956,7 +956,7 @@
     cypress "^3.1.5"
     eslint-plugin-cypress "^2.2.0"
 
-"@vue/cli-plugin-eslint@^3.0.0-rc.9":
+"@vue/cli-plugin-eslint@^3.0.0":
   version "3.4.0"
   resolved "https://registry.yarnpkg.com/@vue/cli-plugin-eslint/-/cli-plugin-eslint-3.4.0.tgz#e9fceff873661848be7e1341b31dad23302cd0ac"
   integrity sha512-KbUpN3Zd/V5zCah9nT9cukTHmd9g4IRskyuIeBw5KZqRDoUgCS7I2+OWlcAMneRuqZwgFbTFYmr9N3s6gz4SVg==
@@ -982,7 +982,7 @@
     jest-transform-stub "^1.0.0"
     vue-jest "^3.0.2"
 
-"@vue/cli-service@^3.0.0-rc.9":
+"@vue/cli-service@^3.0.0":
   version "3.4.0"
   resolved "https://registry.yarnpkg.com/@vue/cli-service/-/cli-service-3.4.0.tgz#d2160ee4cf9de8dc4e9d780ccd61cc15862f2950"
   integrity sha512-AtLiin5Jlw0ULKXJtBhUaykz0VzDgYq2RCf7nxfB7Vsi5fTbJyOVeWYe9KsnsM6VTRBWRUI8NzPPMYxV2uxtQA==
