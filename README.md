@@ -16,26 +16,31 @@ yarn add @mrjeffapp/vue-braintree-paypal-button
 
 ## Developing
 ### Project setup
-```
+```bash
 yarn install
 ```
 
 ### Compiles and hot-reloads for development
-```
-yarn run serve
+```bash
+yarn serve
 ```
 
 ### Compiles and minifies for production
-```
-yarn run build
+```bash
+yarn build
 ```
 
 ### Lints and fixes files
-```
-yarn run lint
+```bash
+yarn lint
 ```
 
-### Run your unit tests
+### Run unit tests
+```bash
+yarn test:unit
 ```
-yarn run test:unit
+
+### Run en to end tests
+```bash
+yarn test:e2e
 ```
