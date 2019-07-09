@@ -5,6 +5,7 @@ describe('Test paypal button', () => {
     cy.visit('/');
     cy.get('.braintree-paypal-button').children().should('have.length', 0);
     cy.get('input').type('sandbox_85mbycg5_f47gdh83pzbn5nbc');
+    cy.wait(2000);
     cy.get('.braintree-paypal-button').children().should('have.length', 1);
   });
 });
