@@ -26,20 +26,20 @@
     "test:e2e": "vue-cli-service test:e2e"
   },
   "dependencies": {
-    "braintree-web": "^3.35.0",
-    "paypal-checkout": "^4.0.209",
-    "vue": "^2.5.16"
+    "braintree-web": "^3.46.0",
+    "paypal-checkout": "^4.0.280",
+    "vue": "^2.5.17"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "^3.0.0",
-    "@vue/cli-plugin-e2e-cypress": "^3.2.0",
-    "@vue/cli-plugin-eslint": "^3.0.0",
-    "@vue/cli-plugin-unit-jest": "^3.0.0",
-    "@vue/cli-service": "^3.0.0",
-    "@vue/eslint-config-airbnb": "^3.0.0",
+    "@vue/cli-plugin-babel": "^3.9.2",
+    "@vue/cli-plugin-e2e-cypress": "^3.9.0",
+    "@vue/cli-plugin-eslint": "^3.9.2",
+    "@vue/cli-plugin-unit-jest": "^3.9.0",
+    "@vue/cli-service": "^3.9.2",
+    "@vue/eslint-config-airbnb": "^4.0.0",
     "@vue/test-utils": "^1.0.0-beta.20",
     "babel-core": "7.0.0-bridge.0",
-    "babel-jest": "^23.0.1",
+    "babel-jest": "^24.8.0",
     "vue-template-compiler": "^2.5.16"
   }
 }
