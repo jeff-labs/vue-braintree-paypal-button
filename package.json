@@ -17,7 +17,7 @@
     "email": "hector@mrjeffapp.com"
   },
   "repository": "github:MrJeffApp/vue-braintree-paypal-button",
-  "main": "dist/vue-braintree-paypal-button.common.js",
+  "main": "dist/@mrjeffapp/vue-braintree-paypal-button.common.js",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build --target lib src/components/BraintreePaypalButton.vue",
