@@ -1,7 +1,7 @@
 {
   "name": "@mrjeffapp/vue-braintree-paypal-button",
   "license": "MIT",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Vue component to integrate PayPal payments through Braintree using Vault flow",
   "keywords": [
     "braintree",
