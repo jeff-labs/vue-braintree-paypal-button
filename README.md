@@ -87,13 +87,13 @@ export default {
 
 ### Component events
 
-#### onAuthorize
+#### authorize
 When customer authorize vault flow.
 
-#### onCancel
+#### cancel
 When customer cancel vault flow.
 
-#### onError
+#### error
 When an error occurs.
 
 ## Developing
