@@ -21,7 +21,7 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build --target lib src/components/BraintreePaypalButton.vue",
-    "build:doc": "vue-cli-service build --dest doc",
+    "build:doc": "vue-cli-service build --dest docs",
     "lint": "vue-cli-service lint",
     "test:unit": "vue-cli-service test:unit",
     "test:e2e": "vue-cli-service test:e2e"
