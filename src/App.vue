@@ -1,7 +1,20 @@
 <template>
   <div id="app">
-    <input v-model="token" placeholder="Insert your Braintree client token here"/>
-    <BraintreePaypalButton v-bind:styles="{ shape: 'rect' }" :token="token" :env="environment" :locale="locale" v-on:error="onError" v-on:authorized="onAuthorize" v-on:canceled="onCancel" />
+    <div>
+      <h1>Vue Braintree PayPal button</h1>
+      <p>Vue component to integrate PayPal payments through Braintree using Vault flow.</p>
+    </div>
+    <div id="tokengenerator">
+      <div class="input-container">
+        <input v-model="token" placeholder="Insert your Braintree client token here"/>
+      </div>
+      <div  class="input-container">
+        <BraintreePaypalButton v-bind:styles="{ shape: 'rect' }" :token="token" :env="environment" :locale="locale" v-on:error="onError" v-on:authorized="onAuthorize" v-on:canceled="onCancel" />
+      </div>
+      <div class="input-container">
+        <p>{{ paymentNonce }}</p>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -19,17 +32,18 @@ export default {
       environment: 'sandbox',
       token: null,
       locale: 'es_ES',
+      paymentNonce: '',
     };
   },
   methods: {
-    onAuthorize: (nonce) => {
-      console.log(nonce);
+    onAuthorize(nonce) {
+      this.paymentNonce = nonce;
     },
-    onCancel: () => {
-      console.log('Cancelled');
+    onCancel() {
+      this.paymentNonce = 'Cancelled';
     },
-    onError: (error) => {
-      console.error(error);
+    onError(error) {
+      this.paymentNonce = error.message;
     },
   },
 };
@@ -43,5 +57,14 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+
+#tokengenerator input {
+  min-width: 260px;
+  margin-right: 10px;
+}
+
+.input-container {
+  padding: 12px;
 }
 </style>
