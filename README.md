@@ -3,6 +3,9 @@
 
 Vue component to integrate PayPal payments through Braintree using Vault flow.
 
+## Demo
+[Demo app](https://jeff-labs.github.io/vue-braintree-paypal-button/)
+
 ## Documentation
 
 [Braintree PayPal vault flow](https://developers.braintreepayments.com/guides/paypal/vault/javascript/v3)
