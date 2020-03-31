@@ -126,3 +126,8 @@ yarn test:unit
 ```bash
 yarn test:e2e
 ```
+
+### Deploy documentation to GitHub pages
+```
+yarn gh-pages
+```

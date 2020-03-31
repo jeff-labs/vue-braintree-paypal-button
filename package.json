@@ -21,7 +21,7 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build --target lib src/components/BraintreePaypalButton.vue",
-    "build:doc": "vue-cli-service build --dest docs",
+    "gh-pages": "vue-cli-service build && vue-cli-service gh-pages",
     "lint": "vue-cli-service lint",
     "test:unit": "vue-cli-service test:unit",
     "test:e2e": "vue-cli-service test:e2e"
@@ -44,6 +44,7 @@
     "babel-jest": "^25.2.4",
     "eslint": "^6.8.0",
     "eslint-plugin-vue": "^6.2.2",
+    "vue-cli-plugin-gh-pages": "^1.0.0",
     "vue-template-compiler": "^2.6.11"
   }
 }
