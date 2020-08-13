@@ -1,4 +1,3 @@
-
 import { shallowMount } from '@vue/test-utils';
 import BraintreePaypalButton from '@/components/BraintreePaypalButton.vue';
 
@@ -50,7 +49,6 @@ describe('BraintreePaypalButton.vue', () => {
     expect(wrapper.emitted().error[0]).toEqual(['paypalCheckoutError']);
   });
 
-
   it('emits error event if fail PayPal button load', () => {
     const wrapper = shallowMount(BraintreePaypalButton, {
       propsData: {
@@ -75,7 +73,6 @@ describe('BraintreePaypalButton.vue', () => {
 
     expect(wrapper.emitted().canceled).toBeTruthy();
   });
-
 
   it('emits authorized event', () => {
     const wrapper = shallowMount(BraintreePaypalButton, {
